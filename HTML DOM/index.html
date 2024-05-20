@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>153_DOM Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pendaftaran Permintaan</h3>
+        </div>
+        <form id="pendaftaranForm" onsubmit="return KirimData()">
+            <label for="Nama">Nama</label><br>
+            <input type="text" placeholder="Masukan nama anda" id="Nama"><br><br>
+
+            <label for="Nim">Nim</label><br>
+            <input type="text" placeholder="Masukan nim anda" id="Nim"><br><br>
+
+            <p>Bidang Permintaan</p>
+
+            <input type="radio" name="peminatan" id="Programing" value="Programing">
+            <label for="Programing">Programing</label><br>
+            <input type="radio" name="peminatan" id="Jaringan" value="Jaringan">
+            <label for="Jaringan">Jaringan</label><br>
+            <input type="radio" name="peminatan" id="Data" value="Data">
+            <label for="Data">Data</label><br>
+            <input type="radio" name="peminatan" id="Design" value="Design">
+            <label for="Design">Design</label><br>
+
+            <label for="Alamat">Alamat</label><br>
+            <textarea name="Alamat" id="Alamat" placeholder="Masukan alamat lengkap anda" cols="30" rows="5"></textarea><br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
